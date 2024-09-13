@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 10px;
+}
+
+header{
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    background-color: #aeb1ed;
+    
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+main{
+    grid-column: 2/3;
+    grid-row: span 3;
+}
+
+aside{
+    padding: 20px 40px;
+    grid-row: span 3;
+}
+
+main h1{
+    color: #213123;
+}
+
+main .publish_date{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+main p{
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.rec{
+    grid-column: 3/ 4;
+    padding: 20px;
+    background-color: #88b1d5;
+}
