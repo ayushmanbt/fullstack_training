@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+    background-color: beige;
+}
+
+.card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow:#222 5px 5px 10px;
+    min-width: 500px;
+}
+
+.card h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.card form{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.card form input{
+    padding: 10px 20px; 
+    width: 100%;
+}
+
+.card form input[type="submit"]{
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #d6ff99;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-weight: bold;
+}
+
+.card form input[type="submit"]:hover{
+    background-color: #8db84b;
+}
+
+#todo_list_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.todo_list_item *{
+    display: block;
+}
+
+.todo_list_item label{
+    flex-grow: 1;
+}
+
+.todo_list_item button{
+    cursor: pointer;
+    padding: 5px 15px;
+    border: none;
+    background-color: #f24141;
+    color: white;
+    transition: background-color 0.3s ease-out;
+}
+
+.todo_list_item button:hover{
+    background-color: #5d0606;
+}
+
+.todo_list_item{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.todo_list_item input[type="checkbox"]:checked + label{
+    text-decoration:line-through;
+}
+
+
+.todo_list_item input[type="checkbox"]:checked{
+    accent-color: rgb(4, 56, 0);
+}

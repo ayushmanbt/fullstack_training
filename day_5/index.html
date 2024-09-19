@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>TODO App</h1>
+        <form id="add">
+            <input type="text" name="todo" id="todo" placeholder="Enter your TODO" required>
+            <input type="submit" value="Add Todo">
+        </form>
+        <div id="todo_list_wrapper">
+            <div class="todo_list_item">
+                <input type="checkbox" name="cb1" id="cb1">
+                <label for="cb1">Todo 1</label>
+                <button>DELETE</button>
+            </div>
+            <div class="todo_list_item">
+                <input type="checkbox" name="cb2" id="cb2">
+                <label for="cb2">Todo 2</label>
+                <button>DELETE</button>
+            </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
