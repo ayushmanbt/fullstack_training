@@ -1,0 +1,21 @@
+.todo_item{
+    display: flex;
+    background-color: #1a3c29;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+label{
+    flex-grow: 1;
+}
+
+.delete_button{
+    background-color: #f94949;
+}
+
+.todo_item input[type="checkbox"]:checked + label{
+    text-decoration:line-through;
+}

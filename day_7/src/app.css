@@ -1,0 +1,42 @@
+.card{
+    background-color: #4a4848;
+    padding: 20px;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.card h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.todo_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card form{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.card form input{
+    padding: 10px 20px; 
+    width: 100%;
+}
+
+.card form input[type="submit"]{
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #d6ff99;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-weight: bold;
+    color: black;
+}
+
+.card form input[type="submit"]:hover{
+    background-color: #8db84b;
+}
