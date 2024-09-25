@@ -7,6 +7,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [editing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
+  const [todoCount, setTodoCount] = useState(0);
   useEffect(() => {
     console.log(todos)
     inputField.current.value = ""
@@ -46,7 +47,8 @@ function App() {
               return todo
             }))
           }else{
-          setTodos(oldState => [...oldState, {id: oldState.length + 1, isDone: false, name: inputField.current.value}]);
+          setTodos(oldState => [...oldState, {id: todoCount, isDone: false, name: inputField.current.value}]);
+          setTodoCount(oldCount => oldCount + 1)
           }
         }}>
             <input ref={inputField} type="text" name="todo" id="todo" placeholder="Enter your TODO" required />
