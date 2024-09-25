@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    background: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    min-width: 500px;
+    padding: 20px;
+    box-shadow: #666 3px 7px 10px;
+    border-radius: 20px;
+}
+
+.card h1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card h1 *{
+    display: block;
+}
+.accordion{
+    
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.accordion button{
+    font-weight: 600; /* Apply font weight according to documentation */
+    /* reset all the default button behaviours */
+    background: none; 
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.accordion button *{
+    display: block;
+}
+
+.accordion .answer {
+    color: #666;
+    font-size: 16px;
+}
+
+.accordion button[status=show] + .answer{
+    display: block;
+}
+
+.accordion button[status=show] img{
+    content: url("./assets/images/icon-minus.svg")
+}
+
+
+.accordion button[status=hide] + .answer{
+    display: none;
+}
+
+.accordion button[status=hide] img{
+    content: url("./assets/images/icon-plus.svg")
+}
+
+@media (max-width: 520px) {
+    .card{
+        width: 90%;
+        min-width: none;
+    }
+}
+
+/* responsive screen */
+@media (max-width: 375px) {
+    body{
+        background: url(./assets/images/background-pattern-mobile.svg);
+    }
+
+}

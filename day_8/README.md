@@ -1,0 +1,3 @@
+# Day 8 - FrontendMentor Challenge
+
+I coded this frontendmentor challenge in front of you all and wanted to see how you perform against me in a time constraint. So this was like a timed challenge, only a few people tried to implement. I expect you all to try this at home and show me the results. You are allowed to reference from my solution. Challenge link - https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz
