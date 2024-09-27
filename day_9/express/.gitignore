@@ -1,0 +1,2 @@
+# Node module is something you should always gitignore
+node_modules
